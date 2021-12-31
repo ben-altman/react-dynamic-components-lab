@@ -17,8 +17,8 @@
     "react-scripts": "^2.1.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "mocha --timeout 5000 -w test/helpers.js test/*.js",
     "eject": "react-scripts eject"
   },
@@ -35,5 +35,10 @@
     "jsdom-global": "3.0.2",
     "mocha": "^5.2.0",
     "sinon": "^6.3.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
